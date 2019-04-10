@@ -1,32 +1,26 @@
 /**
- * this is the entry class for the react-native app
- *
- * it wraps the Provider, which provides all child components with the
- * data of the Redux store
- *
- * Created by Tom on xx/xx/xx
- */
-
+* this is the entry class for the react-native app
+*
+* it wraps the Provider, which provides all child components with the
+* data of the Redux store
+*
+* Created by Tom on xx/xx/xx
+*/
 
 import React, { Component } from 'react'
+import { SafeAreaView, YellowBox } from 'react-native'
 import { Provider } from 'react-redux'
 
 // get the REDUX store
 import store from './store'
 
-// get the push notification class
-// import PushService from './pushNotificationConfig'
-
-// init the PN service as global class
-// PushService.configure()
-
 // get the router config
 import RouterConfig from './routerConfig'
 
-
-console.ignoredYellowBox = [
-    // 'Warning: BackAndroid',
-]
+// in case of an RN bug
+YellowBox.ignoreWarnings([
+    //'...',
+])
 
 // exposing network requests in React Native Debugger,
 // TODO: comment out for production
@@ -34,13 +28,21 @@ console.ignoredYellowBox = [
 
 
 class App extends Component {
-
     render() {
         return (
             <Provider store={store}>
-                <RouterConfig/>
+            <SafeAreaView style={styles.safeArea}>
+            <RouterConfig/>
+            </SafeAreaView>
             </Provider>
         )
+    }
+}
+
+const styles = {
+    safeArea: {
+        flex: 1,
+        backgroundColor: '#FFF'
     }
 }
 

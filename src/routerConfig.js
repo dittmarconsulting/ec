@@ -24,6 +24,7 @@ import { ActionCreator } from '../src/actions/index'
 
 // scenes
 import Splash from '../src/scenes/Splash'
+import TestView from '../src/scenes/TestView'
 
 class RouterConfig extends PureComponent {
 
@@ -82,6 +83,17 @@ class RouterConfig extends PureComponent {
                             duration={0}
                             onEnter={::this._onEnter}
                             onExit={::this._onExit}
+                            initial
+                        />
+
+                        {/* splash page */}
+                        <Scene
+                            key='splash'
+                            component={TestView}
+                            unmountScenes={true}
+                            sceneStyle={{backgroundColor: 'transparent'}}
+                            hideNavBar
+                            duration={0}
                             initial
                         />
 

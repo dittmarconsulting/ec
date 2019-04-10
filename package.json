@@ -17,6 +17,8 @@
     "moment": "^2.24.0",
     "react": "16.8.3",
     "react-native": "0.59.4",
+    "react-native-create-bridge": "^2.0.1",
+    "react-native-event-listeners": "^1.0.3",
     "react-native-router-flux": "^4.0.6",
     "react-redux": "^7.0.1",
     "react-timer-mixin": "^0.13.4",

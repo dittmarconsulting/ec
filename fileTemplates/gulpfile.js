@@ -20,7 +20,7 @@ gulp.task('deleteAll', function() {
 
 // install all neccessary dependencies
 gulp.task('installDep', ['deleteAll'], function (cb) {
-    exec('npm i --save acorn moment react-native-device-info react-native-router-flux react-redux react-timer-mixin redux redux-form redux-saga redux-storage redux-storage-decorator-filter redux-storage-engine-localstorage redux-storage-engine-reactnativeasyncstorage redux-storage-engine-sessionstorage', function (err, stdout, stderr) {
+    exec('npm i --save acorn moment react-native-device-info react-native-router-flux react-redux react-timer-mixin redux redux-form redux-saga redux-storage redux-storage-decorator-filter redux-storage-engine-localstorage redux-storage-engine-reactnativeasyncstorage redux-storage-engine-sessionstorage react-native-event-listeners', function (err, stdout, stderr) {
         console.log(stdout)
         console.log(stderr)
         cb(err)

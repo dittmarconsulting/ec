@@ -31,6 +31,20 @@ class RouterWithRedux extends Component {
         return true
     }
 
+    /*
+        if we used a drawer
+        <Drawer
+            hideNavBar
+            key="drawer"
+            onExit={() => {}}
+            onEnter={() => {}}
+            contentComponent={DrawerContent}
+            drawerWidth={300}>
+            {this.props.children}
+        </Drawer>
+
+    */
+
     render () {
         return (
             <Router
@@ -43,15 +57,7 @@ class RouterWithRedux extends Component {
                             key="root"
                             titleStyle={{ alignSelf: 'center' }}
                             hideNavBar>
-                            <Drawer
-                                hideNavBar
-                                key="drawer"
-                                onExit={() => {}}
-                                onEnter={() => {}}
-                                contentComponent={DrawerContent}
-                                drawerWidth={300}>
-                                {this.props.children}
-                            </Drawer>
+                            {this.props.children}
                         </Stack>
                     </Modal>
                 </Overlay>

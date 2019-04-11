@@ -12,6 +12,7 @@
 		00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
+		0CEBF61DA4148152323E68E4 /* libPods-EatClub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 140D38ECD24940CCFA2FBBC4 /* libPods-EatClub.a */; };
 		11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
@@ -24,6 +25,11 @@
 		39378619225DF6FA00D54D3A /* RestaurantDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 39378615225DF6FA00D54D3A /* RestaurantDetails.m */; };
 		3937861A225DF6FA00D54D3A /* RestaurantDetailsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 39378617225DF6FA00D54D3A /* RestaurantDetailsManager.m */; };
 		3937861C225DFF2C00D54D3A /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3937861B225DFF2C00D54D3A /* View.xib */; };
+		3937861E225EF6C400D54D3A /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 3937861D225EF6C400D54D3A /* placeholder.png */; };
+		39BE8D5C225F677900083EB4 /* favorite.png in Resources */ = {isa = PBXBuildFile; fileRef = 39BE8D33225F677900083EB4 /* favorite.png */; };
+		39BE8D5D225F677900083EB4 /* find-us.png in Resources */ = {isa = PBXBuildFile; fileRef = 39BE8D59225F677900083EB4 /* find-us.png */; };
+		39BE8D5E225F677900083EB4 /* call-us.png in Resources */ = {isa = PBXBuildFile; fileRef = 39BE8D5A225F677900083EB4 /* call-us.png */; };
+		39BE8D5F225F677900083EB4 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 39BE8D5B225F677900083EB4 /* menu.png */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
@@ -309,6 +315,7 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = EatClub/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = EatClub/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = EatClub/main.m; sourceTree = "<group>"; };
+		140D38ECD24940CCFA2FBBC4 /* libPods-EatClub.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EatClub.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		39378615225DF6FA00D54D3A /* RestaurantDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantDetails.m; sourceTree = "<group>"; };
@@ -316,10 +323,17 @@
 		39378617225DF6FA00D54D3A /* RestaurantDetailsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantDetailsManager.m; sourceTree = "<group>"; };
 		39378618225DF6FA00D54D3A /* RestaurantDetailsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantDetailsManager.h; sourceTree = "<group>"; };
 		3937861B225DFF2C00D54D3A /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		3937861D225EF6C400D54D3A /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		39BE8D33225F677900083EB4 /* favorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorite.png; sourceTree = "<group>"; };
+		39BE8D59225F677900083EB4 /* find-us.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "find-us.png"; sourceTree = "<group>"; };
+		39BE8D5A225F677900083EB4 /* call-us.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "call-us.png"; sourceTree = "<group>"; };
+		39BE8D5B225F677900083EB4 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
+		7CBAD70841EFB25DA4DEE752 /* Pods-EatClub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatClub.release.xcconfig"; path = "Pods/Target Support Files/Pods-EatClub/Pods-EatClub.release.xcconfig"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
+		C6B2F757D1F702590764A7DF /* Pods-EatClub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatClub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EatClub/Pods-EatClub.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -342,6 +356,7 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+				0CEBF61DA4148152323E68E4 /* libPods-EatClub.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +445,11 @@
 		13B07FAE1A68108700A75B9A /* EatClub */ = {
 			isa = PBXGroup;
 			children = (
+				39BE8D5A225F677900083EB4 /* call-us.png */,
+				39BE8D33225F677900083EB4 /* favorite.png */,
+				39BE8D59225F677900083EB4 /* find-us.png */,
+				39BE8D5B225F677900083EB4 /* menu.png */,
+				3937861D225EF6C400D54D3A /* placeholder.png */,
 				39378616225DF6FA00D54D3A /* RestaurantDetails.h */,
 				39378615225DF6FA00D54D3A /* RestaurantDetails.m */,
 				39378618225DF6FA00D54D3A /* RestaurantDetailsManager.h */,
@@ -475,6 +495,7 @@
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
+				140D38ECD24940CCFA2FBBC4 /* libPods-EatClub.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -486,6 +507,15 @@
 				5E9157351DD0AC6500FF2AA8 /* libRCTAnimation.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		5F2317440E732B15BAACAC4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6B2F757D1F702590764A7DF /* Pods-EatClub.debug.xcconfig */,
+				7CBAD70841EFB25DA4DEE752 /* Pods-EatClub.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		78C398B11ACF4ADC00677621 /* Products */ = {
@@ -533,6 +563,7 @@
 				00E356EF1AD99517003FC87E /* EatClubTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				5F2317440E732B15BAACAC4B /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -563,6 +594,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "EatClub" */;
 			buildPhases = (
+				12156E0243DE40ACF60A31EE /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
@@ -921,7 +953,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39BE8D5F225F677900083EB4 /* menu.png in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				39BE8D5C225F677900083EB4 /* favorite.png in Resources */,
+				39BE8D5E225F677900083EB4 /* call-us.png in Resources */,
+				39BE8D5D225F677900083EB4 /* find-us.png in Resources */,
+				3937861E225EF6C400D54D3A /* placeholder.png in Resources */,
 				3937861C225DFF2C00D54D3A /* View.xib in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
@@ -943,6 +980,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		12156E0243DE40ACF60A31EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EatClub-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -975,6 +1034,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6B2F757D1F702590764A7DF /* Pods-EatClub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -994,6 +1054,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CBAD70841EFB25DA4DEE752 /* Pods-EatClub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;

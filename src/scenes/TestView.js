@@ -15,13 +15,18 @@ const screenWidth = Dimensions.get('window').width
 
 class TestView extends Component {
 
+    _onButtonPressed(event) {
+        console.log(`${event.nativeEvent.buttonName} button pressed!`)
+    }
+
     render() {
         return (
             <View style={styles.container}>
 
                 <RestaurantDetailsView
                     style={styles.restaurantView}
-                    url="http://www.fnordware.com/superpng/pnggrad16rgb.png"/>
+                    url="https://media-cdn.tripadvisor.com/media/photo-s/0e/cc/0a/dc/restaurant-chocolat.jpg"
+                    onButtonPressed={::this._onButtonPressed}/>
 
             </View>
         )

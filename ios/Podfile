@@ -1,0 +1,9 @@
+# Uncomment the next line to define a global platform for your project
+
+platform :ios, '9.0'
+react_native_path = '../node_modules/react-native'
+
+target 'EatClub' do
+    pod 'AFNetworking', '~> 2.5'
+
+end

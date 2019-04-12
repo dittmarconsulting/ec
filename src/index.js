@@ -4,7 +4,7 @@
  * it wraps the Provider, which provides all child components with the
  * data of the Redux store
  *
- * Created by Tom on 10/3/2019
+ * Created by Tom on 12/3/2019
  */
 
 

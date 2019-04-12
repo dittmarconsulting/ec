@@ -1,17 +1,20 @@
 /**
- * App splash screen
+ * This page displays the map
  *
- * Created by Tom on 10/3/2019
+ * Created by Tom on 12/3/2019
  */
 
 import React, { Component } from 'react'
 import { Dimensions, ActivityIndicator, View, Image } from 'react-native'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+
+import { ActionCreator } from '../actions/index'
+import ToolBar from '../components/ToolBar'
 
 // get the screen width & height
 const screenHeight = Dimensions.get('window').height
 
-// logo + margin + spinner = 182 (91)
-const topDistance = (screenHeight / 2) - 91
 
 class Map extends Component {
 
@@ -37,19 +40,7 @@ class Map extends Component {
 
 
 
-                <View style={styles.toolBoxContainer}>
-                    <View style={styles.leftContainer}>
-
-                    </View>
-                    <View style={styles.centerContainer}>
-                        <Image
-                            style={styles.centerImage}
-                            resizeMode="contain"
-                            source={require('../assets/img/eatclub-small-v3.png')} />
-                    </View>
-                    <View style={styles.rightContainer}>
-                    </View>
-                </View>
+                <ToolBar/>
             </View>
         )
     }
@@ -87,6 +78,5 @@ const styles = {
         backgroundColor: 'red',
     }
 }
-
 
 export default Map

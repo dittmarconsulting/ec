@@ -6,9 +6,9 @@
 
 import C from '../constants'
 
-// example action
-export const exampleAction = () => {
+export const setToolBarBtnActive = numberVal => {
     return {
-        type: C.EXAMPLE_CONSTANT
+        type: C.TOOLBAR_BTN_ACTIVE,
+        payload: numberVal
     }
 }

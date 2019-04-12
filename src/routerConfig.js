@@ -19,7 +19,7 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 
  // components
- import ActionHeader from '../src/components/ActionHeader'
+import ActionHeader from '../src/components/ActionHeader'
 import RouterWithRedux from '../src/components/RouterWithRedux'
 import { ActionCreator } from '../src/actions/index'
 

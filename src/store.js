@@ -3,7 +3,7 @@
  *
  * the function configureStore is called from main.js to pass the `history`
  *
- * Created by Tom on 10/3/2019
+ * Created by Tom on 12/3/2019
  */
 
 import {createStore, applyMiddleware} from 'redux'

@@ -1,7 +1,7 @@
 /**
  * the reducer for all components including the store
  *
- * Created by Tom on 10/3/2019
+ * Created by Tom on 12/3/2019
  */
 
 import C from '../constants'

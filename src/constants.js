@@ -10,6 +10,10 @@ const constants = {
     // component constants
     STORE_SYNCED: 'STORE_SYNCED',
     BACK_ANDROID: 'BACK_ANDROID',
+
+    // map constants
+    SET_MAP_DATA: 'SET_MAP_DATA',
+    SET_SELECTED: 'SET_SELECTED',
 }
 
 export default constants

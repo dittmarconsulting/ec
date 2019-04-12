@@ -1,7 +1,7 @@
 /**
  * This is the bridge file to the native view
  *
- * Created by Tom on 10/3/2019
+ * Created by Tom on 12/3/2019
  */
 
 import React, { Component } from 'react'

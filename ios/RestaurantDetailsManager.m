@@ -18,17 +18,14 @@
 RCT_EXPORT_MODULE();
 
 // export props
-RCT_EXPORT_VIEW_PROPERTY(url, NSString)
+RCT_EXPORT_VIEW_PROPERTY(restaurantObj, NSDictionary)
 RCT_EXPORT_VIEW_PROPERTY(onButtonPressed, RCTBubblingEventBlock)
-
 
 // return native view to the React component
 - (UIView *)view
 {
   return [[RestaurantDetails alloc] initWithEventDispatcher:self.bridge.eventDispatcher];
 }
-
-
 
 // avoid Yellowbox warning
 // https://stackoverflow.com/questions/50773748/difference-requiresmainqueuesetup-and-dispatch-get-main-queue

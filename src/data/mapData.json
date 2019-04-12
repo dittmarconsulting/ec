@@ -1,0 +1,36 @@
+{
+    "data": [
+        {
+            "name": "8bit",
+            "imgUrl": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/e4/ba/e7/8bit.jpg",
+            "type": "American, Fast food, Diner",
+            "open": "Hours: 10:00 AM - 9:00 PM",
+            "address": "231 Swanston St, Melbourne",
+            "active": true
+        },
+        {
+            "name": "8days Cafe",
+            "imgUrl": "https://media-cdn.tripadvisor.com/media/photo-o/0c/b7/26/13/20160827-151850-largejpg.jpg",
+            "type": "Cafe, Australian, Vegetarian Friendly",
+            "open": "Hours: 07:30 AM - 10:30 PM",
+            "address": "1184 High St, Armadale",
+            "active": false
+        },
+        {
+            "name": "Maha",
+            "imgUrl": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/54/07/06/5th-course-grilled-lamb.jpg",
+            "type": "Mediterranean, Turkish, Middle Eastern",
+            "open": "Hours: 12:00 PM - 10:00 PM",
+            "address": "21 Bond St, Melbourne",
+            "active": true
+        },
+        {
+            "name": "Zumbo Patisserie South Yarra",
+            "imgUrl": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/55/10/5f/zumbo-patisserie-south.jpg",
+            "type": "Dessert, Australian, Cafe",
+            "open": "Hours: 08:00 AM - 06:00 PM",
+            "address": "14 Claremont St, South Yarra",
+            "active": true
+        },
+    ]
+}

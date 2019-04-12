@@ -8,7 +8,7 @@
  * FATAL EXCEPTION: OkHttp Dispatcher
  * https://github.com/facebook/react-native/issues/11016
  *
- * Created by Tom on 10/3/2019
+ * Created by Tom on 12/3/2019
  */
 
 import React, { PureComponent } from 'react'
@@ -19,12 +19,13 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 
  // components
+ import ActionHeader from '../src/components/ActionHeader'
 import RouterWithRedux from '../src/components/RouterWithRedux'
 import { ActionCreator } from '../src/actions/index'
 
 // scenes
-import Splash from '../src/scenes/Splash'
-import TestView from '../src/scenes/TestView'
+import Map from '../src/scenes/Map'
+import RestaurantDetails from '../src/scenes/RestaurantDetails'
 
 class RouterConfig extends PureComponent {
 
@@ -73,10 +74,10 @@ class RouterConfig extends PureComponent {
 
                     <Scene key='root'>
 
-                        {/* splash page */}
+                        {/* map page */}
                         <Scene
-                            key='splash'
-                            component={Splash}
+                            key='map'
+                            component={Map}
                             unmountScenes={true}
                             sceneStyle={{backgroundColor: 'transparent'}}
                             hideNavBar
@@ -86,24 +87,20 @@ class RouterConfig extends PureComponent {
                             initial
                         />
 
-                        {/* splash page */}
+                        {/* restaurant detail page */}
                         <Scene
-                            key='splash'
-                            component={TestView}
+                            key='detail'
+                            component={RestaurantDetails}
                             unmountScenes={true}
                             sceneStyle={{backgroundColor: 'transparent'}}
-                            hideNavBar
+                            navBar={ActionHeader}
+                            panHandlers={null}
+                            hideNavBar={false}
+                            hideTabBar
                             duration={0}
-                            initial
                         />
 
                     </Scene>
-
-                    {/* ---------------------------------------------------- */}
-                    {/* ------------ VERTICAL TRANSITION SCENES ------------ */}
-                    {/* ---------------------------------------------------- */}
-
-
 
                 </RouterWithRedux>
 
@@ -138,4 +135,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(RouterConfig)
+export default connect(null, mapDispatchToProps)(RouterConfig)

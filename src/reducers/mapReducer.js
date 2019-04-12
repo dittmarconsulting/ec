@@ -9,7 +9,7 @@ import mapData from '../data/mapData'
 
 // define the init state
 const initState = {
-    mapData: mapData.data,
+    mapData: mapData,
     selected: {},
 }
 

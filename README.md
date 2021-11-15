@@ -1,5 +1,3 @@
-# EatClub Coding Challenge
-
 # Prerequisite
 > Make sure `NodeJs` & `react-native-cli` is installed
 
